@@ -62,10 +62,11 @@
 
 .checkboxLabel:hover .checkboxInput:checked+.checkboxCustom {
     background: #5087F8;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #5087F8;
     border-radius: 6px;
 }
 
 .checkboxLabel:hover .checkboxInput:not(:checked)+.checkboxCustom::after {
+    transform: translate(-50%, -60%) rotate(45deg) scale(1);
     border-color: #E3E3E3;
 }
