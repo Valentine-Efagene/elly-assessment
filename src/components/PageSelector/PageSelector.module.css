@@ -9,6 +9,7 @@
     background-color: white;
     width: 370px;
     box-sizing: border-box;
+    gap: 1rem;
 }
 
 .pageSelector>* {

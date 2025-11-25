@@ -23,9 +23,9 @@
     position: relative;
     width: 24px;
     height: 24px;
-    border: 2px solid #d1d5db;
-    border-radius: 4px;
-    background-color: white;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    background: #FFFFFF;
     transition: all 0.2s ease;
     flex-shrink: 0;
 }
@@ -33,20 +33,21 @@
 .checkboxCustom::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 6px;
-    height: 12px;
-    border: solid #d1d5db;
-    border-width: 0 2px 2px 0;
+    width: 8px;
+    height: 16px;
+    border: solid transparent;
+    border-width: 0 1px 1px 0;
     transform-origin: center;
     transition: all 0.2s ease;
 }
 
 .checkboxInput:checked+.checkboxCustom {
-    background-color: #3b82f6;
-    border-color: #3b82f6;
+    background: #5087F8;
+    border-radius: 6px;
+    border-color: transparent;
 }
 
 .checkboxInput:checked+.checkboxCustom::after {
@@ -55,10 +56,16 @@
 }
 
 .checkboxLabel:hover .checkboxCustom {
-    border-color: #9ca3af;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
 }
 
-.checkboxInput:checked+.checkboxCustom:hover {
-    border-color: #2563eb;
-    background-color: #2563eb;
+.checkboxLabel:hover .checkboxInput:checked+.checkboxCustom {
+    background: #5087F8;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+}
+
+.checkboxLabel:hover .checkboxInput:not(:checked)+.checkboxCustom::after {
+    border-color: #E3E3E3;
 }
