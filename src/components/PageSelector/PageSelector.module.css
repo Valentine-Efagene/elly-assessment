@@ -1,19 +1,18 @@
-.page-selector {
+.pageSelector {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0px;
+    align-items: stretch;
+    padding: 10px;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 0px 4px rgba(20, 20, 20, 0.1), 0px 8px 15px rgba(20, 20, 20, 0.12);
     border-radius: 6px;
     background-color: white;
-    width: 100%;
-    max-width: 300px;
+    width: 370px;
+    box-sizing: border-box;
 }
 
-.page-selector>* {
-    padding: 0.5rem 1rem;
-    width: 100%;
+.pageSelector>* {
+    padding: 0.5rem 0;
 }
 
 .separator {

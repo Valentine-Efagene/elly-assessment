@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Checkbox } from './Checkbox'
-import { Button } from './Button'
-import './PageSelector.css'
+import { Checkbox } from '../Checkbox'
+import { Button } from '../Button'
+import styles from './PageSelector.module.css'
 
 export function PageSelector() {
     const [allPages, setAllPages] = useState(false)
@@ -36,16 +36,14 @@ export function PageSelector() {
     }
 
     return (
-        <div className="page-selector">
+        <div className={styles.pageSelector}>
             <Checkbox
                 checked={allPages}
                 onChange={handleAllPagesChange}
                 label="All Pages"
             />
 
-            <div className="separator"></div>
-
-            <Checkbox
+            <div className={styles.separator}></div>            <Checkbox
                 checked={pages.page1}
                 onChange={(checked) => handlePageChange('page1', checked)}
                 label="Page 1"
@@ -66,7 +64,7 @@ export function PageSelector() {
                 label="Page 4"
             />
 
-            <div className="separator"></div>
+            <div className={styles.separator}></div>
 
             <Button onClick={handleDone}>Done</Button>
         </div>

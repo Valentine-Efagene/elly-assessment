@@ -1,9 +1,9 @@
 import { PageSelector } from './components/PageSelector'
-import './App.css'
+import styles from './App.module.css'
 
 function App() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <PageSelector />
     </div>
   )

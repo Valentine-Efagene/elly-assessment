@@ -1,4 +1,4 @@
-import './Checkbox.css'
+import styles from './Checkbox.module.css'
 
 interface CheckboxProps {
     checked: boolean
@@ -8,15 +8,15 @@ interface CheckboxProps {
 
 export function Checkbox({ checked, onChange, label }: CheckboxProps) {
     return (
-        <label className="checkbox-label">
+        <label className={styles.checkboxLabel}>
+            <span>{label}</span>
             <input
                 type="checkbox"
                 checked={checked}
                 onChange={(e) => onChange(e.target.checked)}
-                className="checkbox-input"
+                className={styles.checkboxInput}
             />
-            <span className="checkbox-custom"></span>
-            {label}
+            <span className={styles.checkboxCustom}></span>
         </label>
     )
 }

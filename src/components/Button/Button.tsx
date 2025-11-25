@@ -1,4 +1,4 @@
-import './Button.css'
+import styles from './Button.module.css'
 
 interface ButtonProps {
     onClick: () => void
@@ -7,7 +7,7 @@ interface ButtonProps {
 
 export function Button({ onClick, children }: ButtonProps) {
     return (
-        <button className="done-button" onClick={onClick}>
+        <button className={styles.doneButton} onClick={onClick}>
             {children}
         </button>
     )
