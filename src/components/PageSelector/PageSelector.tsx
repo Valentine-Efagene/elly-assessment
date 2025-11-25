@@ -66,7 +66,7 @@ export function PageSelector() {
 
             <div className={styles.separator}></div>
 
-            <Button onClick={handleDone}>Done</Button>
+            <Button onClick={handleDone} className={styles.button}>Done</Button>
         </div>
     )
 }

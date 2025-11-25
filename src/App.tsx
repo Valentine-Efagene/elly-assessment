@@ -1,5 +1,6 @@
-import { PageSelector } from './components/PageSelector'
+
 import styles from './App.module.css'
+import { PageSelector } from './components/PageSelector'
 
 function App() {
   return (
